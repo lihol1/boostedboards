@@ -1,0 +1,46 @@
+.scateboards {
+    position: relative;
+}
+.scateboards__bg img{
+    width: 100%;
+    max-width: 1440px;    
+    margin: 0 auto;
+}
+.scateboards__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    top: 44px;
+    display: block;
+    max-width: 488px;
+    margin: 0 auto;
+    text-align: center;
+}
+.scateboards__pre-title {
+    margin-bottom: 11px;
+}
+.scateboards__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.13;
+    margin-bottom: 15px;
+}
+.scateboards__text {   
+    margin-bottom: 17px;
+}
+
+@media (max-width: 700px) {
+    .scateboards__content {
+        position: static; 
+        padding: 20px 10px;
+    }
+    
+}
+
+@media (max-width: 575px) { 
+    .scateboards__title {
+        font-size: 26px;
+    }
+    
+}
