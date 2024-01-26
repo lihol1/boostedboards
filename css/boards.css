@@ -1,0 +1,161 @@
+.boards {
+    padding-top: 95px;
+}
+
+.boards__block {
+    padding: 40px 20px 20px 20px;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-rows: auto;
+    gap: 15px;
+    justify-content: center;
+}
+
+.boards__image {
+    margin-bottom: 20px;
+}
+
+.boards__info {
+    justify-self: center;
+}
+
+.boards__btn-block {
+    justify-content: center;
+}
+
+.boards__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+}
+
+.boards__modal-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;    
+}
+
+.boards__desc-block {
+    position: absolute;
+    width: 1200px;
+    max-height: calc(100% - 120px);
+    min-height: 70%;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -45%);
+    overflow-y: auto;    
+    background-color: #fff;
+    border: 1px solid #999;  
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 20px #999;
+}
+
+.boards__close__img {
+    margin: 15px;
+}
+
+.boards__desc {
+    display: flex;
+    padding: 10px 10px 20px 10px;
+ 
+}
+
+.boards__desc-img {  
+    min-width: 500px;
+}
+
+.boards__text {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px 30px 10px 20px;
+    text-align: justify;
+}
+
+.boards__text h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.boards__text p + p {
+    margin-top: 10px;
+}
+
+@media (max-width: 1260px) {
+    .boards__desc-block {
+        width: 900px;       
+    }
+    .boards__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .boards__desc-block {
+        width: 700px;
+        min-height: fit-content;       
+    }
+    .boards__desc-img {
+        min-width: 350px;
+    }    
+    .boards__text h3 {
+        margin: 0 0 10px 0;
+    }
+    .boards__text {
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .boards__text p + p {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .boards__desc-block {
+        width: 100vw;
+        max-height: unset;
+        top: 0;
+        left: 0;
+        padding-top: 96px;
+        height: 100vh;        
+        transform:none; 
+        border: none;
+        border-radius: 0;
+    }
+
+    .boards__desc {
+        flex-direction: column;
+        
+    }
+    .boards__text {
+        max-width: 100%;
+    }
+    .boards__desc-img {
+        width: 100%;
+        min-width: unset;   
+        flex-grow: 0;
+        margin-bottom: 10px;
+    }
+    .boards__desc-img img {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .boards__close__img {
+        margin: 7px;
+    }
+    .boards__desc-img img {
+        width: 100%;
+    }
+    .boards__text {
+        padding: 10px;
+    }
+}
