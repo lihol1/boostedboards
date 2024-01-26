@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Scateboards and scooters. E-commerce">
+        <link rel="icon" href="./favicon.ico">
+        <link rel="icon" href="./img/icons/favicons/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/favicons/apple-touch-icon.png">
+        <link rel="manifest" href="./img/icons/favicons/site.webmanifest">
+        <title>Boosted scateboards and scooters</title>   
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+        
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+    <body style="height:100vh;overflow:hidden">
+        
+        <div class="loader">
+            <div class="loader__inner"></div>
+        </div>
+
+        <div class="wrapper">
+            
+            <header class="header">                
+                <div class="header__info">
+                    <p>Financing option available at checkout.</p>
+                </div>
+                <div class="header__container container">
+                    <div class="header__content">                        
+                        <a href="#">
+                            <div class="header__logo logo">
+                                <img class="logo__img" src="./img/icons/logo.png" alt="logo">
+                                <div class="logo__name">ALEXFITcom</div>
+                            </div>
+                        </a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__link"><a href="boards.html">Electric Skateboards</a></li>
+                                <li class="nav__link"><a href="scooters.html">Electric Scooters</a></li>
+                                <li class="nav__link"><a href="accessories.html" >Accessories</a></li>
+                                <li class="nav__link"><a href="#!" data-scroll="gift-card">Gift Card</a></li>
+                                <li class="nav__link"><a href="#!" data-scroll="footer">contacts</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="burger-menu"><span></span></div>
+                        <div class="header__icons">
+                            
+                            <button type="button" class="header__icon" tabindex="0">
+                                <img src="./img/icons/avatar.svg" alt="avatar">                        
+                            </button>
+                            <div class="login-modal hidden" data-modal="close" >
+                                <div class="login-modal__bg"></div>
+                                <form class="login-modal__form">
+                                    <div class="login-modal__close-icon close-icon">
+                                        <img class="close-icon__img" src="img/icons/x.svg" alt="Close icon">
+                                    </div>
+                                    <div class="login-modal__email">
+                                        <label for="email" class="login-modal__email-text">Email</label>
+                                        <input id="email" type="text" autocomplete="on" required>
+                                    </div>
+                                    <div class="login-modal__password">
+                                        <label for="password" class="login-modal__password-text">Password</label>
+                                        <input id="password" type="password" required>
+                                        <div class="login-modal__password-help"><a href="#!">Forgot your password?</a>
+                                        </div>
+                                    </div>
+                                    <button class="login-modal__btn btn">Log in</button> 
+                                    <button class="login-modal__new btn"><a href="#!">Create a new account</a></button> 
+                                </form>
+                            </div>
+
+                            <a href="./cart.html" class="header__icon header__icon-cart">
+                                <img src="./img/icons/cart.svg" alt="cart">
+                                <span class="header__icon-num hidden"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="intro" id="intro">
+                <div class="intro__wrapper container">
+                    <picture  class="intro__img">                        
+                        <source type="image/webp" srcset="./img/intro-bg-small.webp 1x, ./img/intro-bg@1x.webp 2x" media="(max-width: 700px)">
+                        <source type="image/jpg" srcset="./img/intro-bg-small.jpg 1x, ./img/intro-bg@1x.jpg 2x" media="(max-width: 700px)">
+                        <source type="image/webp" srcset="./img/intro-bg@1x.webp 1x, ./img/intro-bg@2x.webp 2x">
+                        <source type="image/jpg" srcset="./img/intro-bg@1x.jpg 1x, ./img/intro-bg@2x.jpg 2x">
+                        <img src="./img/intro-bg@1x.jpg" alt="Boosted scooters and boards" width="1440" height="810">
+                    </picture>
+                    
+                    <div class="intro__content">
+                        <h1 class="intro__title title">Welcome to ALEXFITcom</h1>
+                        <h3 class="intro__subtitle">The Holy Grail of Electric Skateboards and One REVolutionary Scooter</h3>
+                        <div class="intro__btn-block">
+                            <a href="#!" data-scroll="b-scooters"><button class="btn">BOOSTED REVS</button></a>
+                            <a href="#!" data-scroll="scateboards"><button class="btn">BOOSTED BOARDS</button></a>
+                        </div>                    
+                    </div>
+                </div>
+            </section>
+
+            <div class="partners">
+                <div class="partners__container container">
+                    <div class="partners__content">                       
+                        <div class="partners__item">
+                            <picture>
+                                <source type="image/webp" srcset="./img/partners/electrek.webp">
+                                <img src="./img/partners/electrek.png" alt="electrek-logo">
+                            </picture>
+                        </div>
+                        <div class="partners__item">
+                            <picture>
+                                <source type="image/webp" srcset="./img/partners/tech-crunch.webp">
+                            <img src="./img/partners/tech-crunch.png" alt="tech-crunch-logo">
+                            </picture>
+                        </div>
+                        <div class="partners__item">
+                            <picture>
+                                <source type="image/webp" srcset="./img/partners/popular-mechanic.webp">
+                            <img src="./img/partners/popular-mechanic.png" alt="popular-mechanic-logo">
+                            </picture>
+                        </div>
+                        <div class="partners__item">
+                            <picture>
+                                <source type="image/webp" srcset="./img/partners/wired.webp">
+                                <img src="./img/partners/wired.png" alt="wired-logo">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="gallery">
+                <div class="gallery__container ">
+                    <div class="gallery__info">
+                        <h2 class="gallery__title title">Looking for Boosted Boards, or Boosted Revs?</h2>
+                        <div class="gallery__desc">
+                            <p>Boosted USA acquired all of the remaining inventory directly from Boosted.  This means we have the electric skateboards and scooter you all love and have been looking for.  Get your hands on these highly sought after products while supplies last.</p>
+                        </div>
+                    </div>                    
+                    <div class="gallery__wrapper"> 
+                        <div class="gallery__slider swiper">
+                            <div class="gallery__swiper swiper-wrapper">
+                                <div class="gallery__slide swiper-slide">
+                                    <picture >
+                                        <source type="image/avif" srcset="img/gallery/stealth.avif 1x, img/gallery/stealth@2x.avif 2x">
+                                        <source type="image/webp" srcset="img/gallery/stealth.webp 1x, img/gallery/stealth@2x.webp 2x">
+                                        <img src="img/gallery/stealth.jpg" srcset="img/gallery/stealth@2x.jpg 2x" alt="Скоростной электрический скейтборд" width="454" height="454">
+                                    </picture>
+                                </div>
+                                <div class="gallery__slide swiper-slide">
+                                    <picture >
+                                        <source type="image/avif" srcset="img/gallery/plus.avif 1x, img/gallery/plus@2x.avif 2x">
+                                        <source type="image/webp" srcset="img/gallery/plus.webp 1x, img/gallery/plus@2x.webp 2x">
+                                        <img src="img/gallery/plus.jpg" srcset="img/gallery/plus@2x.jpg 2x" alt="Электрический скейтборд" width="454" height="454">
+                                    </picture>
+                                </div>
+                                <div class="gallery__slide swiper-slide">
+                                    <picture>
+                                        <source type="image/avif" srcset="img/gallery/mini.avif 1x, img/gallery/mini@2x.avif 2x">
+                                        <source type="image/webp" srcset="img/gallery/mini.webp 1x, img/gallery/mini@2x.webp 2x">
+                                        <img src="img/gallery/mini.jpg" srcset="img/gallery/mini@2x.jpg 2x" alt="Электрический мини-скейтборд" width="454" height="454">
+                                    </picture> 
+                                </div>
+                                <div class="gallery__slide swiper-slide">
+                                    <picture>
+                                        <source type="image/avif" srcset="./img/gallery/boards@1x.avif 1x, ./img/gallery/boards@2x.avif 2x">
+                                        <source type="image/webp" srcset="./img/gallery/boards@1x.webp 1x, ./img/gallery/boards@2x.webp 2x">
+                                        <img src="./img/gallery/boards@1x.jpg" alt="boards Boosted" width="454" height="454">
+                                    </picture>
+                                </div>
+                                <div class="gallery__slide swiper-slide">
+                                    <picture>
+                                        <source type="image/avif" srcset="./img/gallery/scooters@1x.avif 1x, ./img/gallery/scooters@2x.avif 2x">
+                                        <source type="image/webp" srcset="./img/gallery/scooters@1x.webp 1x, ./img/gallery/scooters@2x.webp 2x">
+                                        <img src="./img/gallery/scooters@1x.jpg" alt="Scooters" width="454" height="454">
+                                    </picture>  
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev gallery__button-prev"></div>
+                            <div class="swiper-button-next gallery__button-next"></div>
+                                                       
+                        </div>
+                        <div class="gallery__pagination swiper-pagination"></div> 
+                    </div>                                                           
+                </div>
+            </section>
+
+            <section class="scateboards" id="scateboards">
+                <div class="scateboards__content">
+                    <p class="scateboards__pre-title">High-performance</p>
+                    <h3 class="scateboards__title">Electric Skateboards</h3>
+                    <p class="scateboards__text">Cruising campus, going to work or getting through that long list of errands has never been easier or more fun.</p>
+                    <a href="boards.html"><button class="btn">Shop now</button></a>
+                </div>  
+                <picture  class="scateboards__bg">
+                    <!-- <source type="image/avif" srcset="./img/scateboards-bg-small.avif 1x, ./img/scateboards-bg@1x.avif 2x" media="(max-width: 700px)"> -->
+                    <source type="image/webp" srcset="./img/scateboards-bg-small.webp 1x, ./img/scateboards-bg@1x.webp 2x" media="(max-width: 700px)">
+                    <source type="image/jpg" srcset="./img/scateboards-bg-small.jpg 1x, ./img/scateboards-bg@1x.jpg 2x" media="(max-width: 700px)">
+                    <!-- <source type="image/avif" srcset="./img/scateboards-bg@1x.avif 1x, ./img/scateboards-bg@2x.avif 2x"> -->
+                    <source type="image/webp" srcset="./img/scateboards-bg@1x.webp 1x, ./img/scateboards-bg@2x.webp 2x">
+                    <source type="image/jpg" srcset="./img/scateboards-bg@1x.jpg 1x, ./img/scateboards-bg@2x.jpg 2x">
+                    <img src="./img/scateboards-bg@1x.jpg" alt="scateboards" width="1440" height="736" loading="lazy">
+                </picture>
+                        
+            </section>
+
+            <section class="b-scooters" id="b-scooters">
+                <div class="b-scooters__container container">
+                    <div class="b-scooters__content">
+                        <div class="b-scooters__info _anim-items _anim-no-hide">
+                            <h3 class="b-scooters__title title">Boosted Rev</h3>
+                            <h3 class="b-scooters__text">There's never been an electric scooter quite like this. Speed past traffic at 24 mph. Go up to 22 miles on a single charge. You'll get there in no time at all. Stop and go with the roll of your thumb. Its intuitive design means there’s almost no learning curve.</h3>
+                            <a  href="scooters.html"><button class="btn">Shop now</button></a>
+                        </div>    
+                        <div class="b-scooters__img-block _anim-items _anim-no-hide">                
+                            <picture class="b-scooters__img">
+                                <source type="image/avif" srcset="img/scooters/scooter.avif 1x, img/scooters/scooter@2x.avif 2x">
+                                <source type="image/webp" srcset="img/scooters/scooter.webp 1x, img/scooters/scooter@2x.webp 2x">
+                                <img src="img/scooters/scooter.jpg" srcset="img/scooters/scooter@2x.jpg 2x" alt="Электросамокат" width="380" height="380" loading="lazy">
+                            </picture>
+                            <picture class="b-scooters__img">
+                                <source type="image/avif" srcset="img/scooters/scooter-wheel.avif 1x, img/scooters/scooter-wheel@2x.avif 2x">
+                                <source type="image/webp" srcset="img/scooters/scooter-wheel.webp 1x, img/scooters/scooter-wheel@2x.webp 2x">
+                                <img src="./img/scooters/scooter-wheel.jpg" srcset="img/scooters/scooter-wheel@2x.jpg" alt="Руль электросамоката" width="380" height="380" loading="lazy">
+                            </picture> 
+                        </div>                 
+                    </div>            
+                </div>
+            </section>
+
+            <!-- <div class="video-section">
+                <div class="video-section__container container">
+                    <div class="video-section__block">
+                        <div class="video-section__item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/78bXV1ZqQWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-section__item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oAQxk9dOJ8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="gift-card" id="gift-card">
+                <div class="gift-card__container container">
+                    <div class="gift-card__wrapper"> 
+                        <div class="gift-card__holder">
+                            <div class="gift-card__body">
+                                <div class="gift-card__front">
+                                    <picture>
+                                        <source type="image/jpg" srcset="./img/gift-card/mini-gift-card.jpg 1x, ./img/gift-card/gift-card.jpg 2x" media="(min-width: 320px) and (max-width: 400px)">
+                                        <source type="image/webp" srcset="./img/gift-card/gift-card.webp 1x, ./img/gift-card/gift-card@2x.webp 2x">
+                                        <img src="./img/gift-card/gift-card.jpg" alt="Gift card" width="700" height="452" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="gift-card__back">
+                                    <picture>
+                                        <source type="image/webp" srcset="./img/gift-card/gift-card-back.webp">
+                                        <img src="./img/gift-card/gift-card-back.jpg" alt="Gift card back" width="700" height="452" loading="lazy">
+                                    </picture>                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gift-card__info">
+                            <h3 class="gift-card__title">Gift Card</h3>
+                            <div class="gift-card__price">$1000</div>
+                            <button class="gift-card__button btn">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="gift-card__wrapper">                    
+                        <picture class="gift-card__image">
+                            <source type="image/jpg" srcset="./img/gift-card/mini-gift-card.jpg 1x, ./img/gift-card/gift-card.jpg 2x" media="(min-width: 320px) and (max-width: 400px)">
+                            <source type="image/webp" srcset="./img/gift-card/gift-card.webp 1x, ./img/gift-card/gift-card@2x.webp 2x">
+                            <img src="./img/gift-card/gift-card.jpg" alt="Gift card" width="700" height="452" loading="lazy">
+                        </picture>
+                        <div class="gift-card__info">
+                            <h3 class="gift-card__title">Gift Card</h3>
+                            <div class="gift-card__price">$1000</div>
+                            <button class="gift-card__button btn">Add to cart</button>
+                        </div>
+                    </div>  -->
+                </div> 
+            </div>
+
+            <section class="advantages">
+                <div class="advantages__container container">
+                    <div class="advantages__content">
+                        <div class="advantages__item">
+                            <div class="advantages__image">
+                                <img class="advantages__icon _anim-items _anim-no-hide" src="./img/icons/speed.png" alt="Иконка спидометра" width="87" height="87" loading="lazy">
+                            </div>
+                            <h3 class="advantages__title">Go Fast</h3>
+                            <div class="advantages__text">
+                                <p>Boosted is known for its premium performance boards offering a next-level experience.</p>
+                            </div>
+                        </div>
+                        <div class="advantages__item ">
+                            <div class="advantages__image">
+                                <img class="advantages__icon _anim-items _anim-no-hide" src="./img/icons/root.png" alt="Иконка маршрута" width="87" height="87" loading="lazy">
+                            </div>
+                            <h3 class="advantages__title">Go Far</h3>
+                            <div class="advantages__text">
+                                <p>With optional extended battery life, you can get wherever you need to go reliably.</p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__image">
+                                <img class="advantages__icon _anim-items _anim-no-hide" src="./img/icons/lamp.png" alt="Иконка лампы" width="87" height="87" loading="lazy">
+                            </div>
+                            <h3 class="advantages__title">Go Safe</h3>
+                            <div class="advantages__text">
+                                <p>Safety is a #1 priority for Boosted, always wear a helmet when riding.</p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__image">
+                                <img class="advantages__icon _anim-items _anim-no-hide" src="./img/icons/checked.png" alt="Иконка галочки" width="87" height="87" loading="lazy">
+                            </div>
+                            <h3 class="advantages__title">Built to Last!</h3>
+                            <div class="advantages__text">
+                                <p>Boosted products are engineered to last for years and are extremely reliable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <footer class="footer" id="footer">
+                <div class="footer__wrapper">
+                    <div class="footer__container container">
+                        <div class="footer__row">
+                            <div class="footer__logo">
+                                <a href="./index.html">
+                                    <div class="logo">
+                                        <img class="logo__img" src="./img/icons/logo.png" alt="logo" loading="lazy">
+                                        <div class="logo__name">ALEXFITcom</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__explore">
+                                <h3 class="footer__title">Explore</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="boards.html">Electric Skateboards</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="scooters.html">Electric Scooters</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="accessories.html">Accessories</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#!" data-scroll="gift-card">Gift Card</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#!" data-scroll="footer">Contacts</a></li>                                                                
+                                </ul> 
+                            </div>
+                            <div class="footer__about">
+                                <h3 class="footer__title">About ALEXFITcom</h3>
+                                <p class="footer__text">ALEXFITcom empowers people everywhere to commute across their cities, campuses, and communities in ways that were never before possible. ALEXFITcom is solving one of the biggest problems people face each day: transportation.                                
+                                </p>
+                                <div class="footer__adress">
+                                    <p>CaliRides LLC - DBA ALEXFITcom</p>
+                                    <p>1281 Andersen Drive Ste. K</p>
+                                    <p>San Rafael, CA 94901</p>
+                                    <p>tel. 934545046</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>               
+                </div>
+                <a href="#!" data-scroll="intro"><span class="footer__up hidden"></span></a>
+                <div class="footer__bottom"> 
+                    <div class="footer__container container"> 
+                        <div class="footer__second-row">             
+                            <div class="footer__copyright">© 2023
+                                <span>ALEXFITcom.</span>
+                                <span>Terms of Service.</span></div>
+                            <div class="footer__pay">
+                                <img src="./img/icons/pay/amex.svg" alt="Значок American Express" loading="lazy">
+                                <img src="./img/icons/pay/dinner-club-int.svg" alt="Значок Dinner Club International" loading="lazy">
+                                <img src="./img/icons/pay/google-pay.svg" alt="Значок Google Pay" loading="lazy">
+                                <img src="./img/icons/pay/klarna.svg" alt="Значок Klarna" loading="lazy">
+                                <!-- <img src="./img/icons/pay/mastercard.svg" alt="Значок Master Card" loading="lazy">
+                                <img src="./img/icons/pay/pay.svg" alt="Значок Pay" loading="lazy">
+                                <img src="./img/icons/pay/v-pay.svg" alt="Значок V Pay" loading="lazy">
+                                <img src="./img/icons/pay/visa.svg" alt="Значок Visa" loading="lazy"> -->
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+        
+    </body>
+</html>
