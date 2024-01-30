@@ -1,0 +1,139 @@
+.gallery {
+    position: relative;
+    padding: 30px 15px 60px 15px;
+}
+
+.gallery__info {
+     max-width: 690px;
+     margin: 0 auto;
+     text-align: center;
+     padding: 22px 15px 45px;
+}
+
+.gallery__title {
+     margin-bottom: 17px;
+}
+
+.gallery__desc {
+     font-size: 15px;
+     line-height: 1.25;
+}
+
+.gallery__desc::after {
+     position: relative;
+     margin: 25px auto 0px;
+     content: "";
+     display: block;
+     width: 70px;
+     height: 2px;
+     background-color: #cfcfcf;
+}
+
+.gallery__wrapper {
+    width:  80%;
+    max-width: 1440px;    
+    /* overflow: hidden; */
+    /* position: relative;     */
+    z-index: 1;
+    margin: 0 auto; 
+    
+}
+
+.gallery__slider {
+    /* padding-bottom: 6%; */
+    /* display: flex;
+    position: absolute;
+    top: 0;
+    transition: left 0.6s ease-in-out; */
+}
+
+.gallery__slider picture *{
+    /* display: block;
+    width: 100%;     */
+    margin: 0 auto;
+}
+
+
+/* Pagination, Navigation */
+.swiper-button-prev, 
+.swiper-button-next {
+    /* visibility: hidden; */
+    position: absolute;
+    top: 42%;  
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 2px solid #eb7106;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(225, 130, 6, 0.3);
+    z-index: 2;
+    opacity: 0.6;
+    transition: visibility 0.1s ease;
+}
+
+.gallery__slider:hover .gallery__button-prev {   
+    visibility: visible; 
+}
+.gallery__slider:hover .gallery__button-next {   
+    visibility: visible; 
+}
+
+.swiper-button-prev:hover, 
+.swiper-button-next:hover {
+    opacity: 1;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-size: 22px;
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+    background-image: url('../img/icons/icon-up-orange.svg');
+}
+
+.swiper-button-prev {
+    left: 2%;
+    transform: rotate(-90deg);
+}
+.swiper-button-next {
+    right: 2%;
+    transform: rotate(90deg);
+}
+.swiper-pagination-bullet-active{
+    background-color: #ff7601;
+}
+.swiper-pagination {
+    position: static;
+    padding-top: 30px;
+}
+/* ====================================================================== */
+
+@media(max-width: 991px) {
+    .swiper-button-prev, 
+    .swiper-button-next {
+       visibility: visible;
+}
+    
+}
+@media(max-width: 815px) {    
+    .swiper-button-prev, 
+    .swiper-button-next {
+        display: none;
+    }    
+}
+
+@media (max-width: 574px) {
+    .gallery {
+        padding: 30px 15px 40px 15px;
+    }
+}
+
+
+
+
+
+

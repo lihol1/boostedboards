@@ -1,0 +1,26 @@
+.partners {
+    padding: 18px 0;
+    background-color: #000;
+}
+.partners__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    
+}
+.partners__item {
+    padding: 0 15px;
+    max-width: 33%;
+}
+
+@media (max-width: 575px) { 
+    .partners__content {
+        row-gap: 10px;
+    }
+    .partners__item {
+        padding: 0 10px;
+    }
+    
+}

@@ -1,0 +1,180 @@
+.accessories {
+    padding-top: 95px;
+}
+.accessories__block {
+    padding: 80px 20px 20px 20px;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-rows: auto;
+    gap: 30px;
+    justify-content: center;
+}
+.prods__item {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto 1fr 40px / 1fr;  
+    padding: 15px; 
+    border-radius: 10px;
+    transition: all 0.3s ease-in; 
+}
+.prods__item:hover {
+    position: relative;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px 2px #999;
+}
+.prods__image {   
+    cursor: pointer;
+}
+.prods__image img {    
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+
+.accessories__modal {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+}
+.accessories__modal--active {
+    display: block;
+}
+.accessories__modal-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;    
+}
+.accessories__close-icon {
+    padding: 10px 10px;
+}
+
+.accessories__image-block {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: 600px;
+    z-index: 10;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.accessories__modal-image img {
+    margin: 0 auto;
+}
+
+.prods__info {
+    margin-bottom: 20px;
+}
+
+.prods__info-name {
+    line-height: 1.3;
+    color: #373737;
+}
+.prods__info-price {
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 1.3;    
+    color: #373737;
+}
+.accessories__info-price--lthrough {    
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #373737;
+}
+.accessories__info-price--red {      
+    font-size: 14px;    
+    color: #ff2121;    
+} 
+.prods__btn-block {
+    display: flex;
+    align-items: center;
+}
+.prods__button {
+    justify-self: start;
+    width: unset !important;
+    padding: 0px 20px; 
+    margin-right: 20px;   
+}
+
+.prods__cart-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s ease-in;
+    cursor:pointer;
+}
+.prods__cart-icon:hover {
+    transform: scale(1.3);
+}
+
+.prods__cart-icon:after {
+    display: none;
+    position:absolute;
+    content: "";    
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    right: -5px;
+    background: url('../img/icons/checked-green.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.prods__cart-icon.checked:after{
+    display: block;
+} 
+.prods__cart-icon img {
+    width: 100%;
+}
+
+.icon-checked {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    left: 10px;
+}
+
+@media (max-width: 767px) {
+    .accessories__block {
+        padding: 20px 20px 20px 20px;
+        gap: 10px;
+    }
+    .prods__item:hover {
+        position: static;
+        transform: none;
+        box-shadow: none;
+    }
+    .prods__info {
+        margin-bottom: 10px;
+    }
+    .accessories__image-block {
+        width: 400px;
+        height: 430px;
+    }
+    .prods__image img {
+        margin-bottom: 10px;
+    }  
+    .prods__button {
+        font-size: 13px;
+    } 
+     
+}
+
+@media (max-width: 575px) {     
+    .accessories__image-block {
+        width: 290px;
+        height: 330px;
+    }
+        
+}
